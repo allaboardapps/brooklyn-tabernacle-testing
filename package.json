@@ -1,0 +1,23 @@
+{
+  "name": "brooklyn-tabernacle-testing",
+  "version": "1.0.0",
+  "description": "Automated testing of Brooklyn Tabernacle Drupal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/allaboardapps/brooklyn-tabernacle-testing.git"
+  },
+  "author": "Randy Burgess",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allaboardapps/brooklyn-tabernacle-testing/issues"
+  },
+  "homepage": "https://github.com/allaboardapps/brooklyn-tabernacle-testing#readme",
+  "devDependencies": {
+    "cypress": "^3.2.0"
+  }
+}
