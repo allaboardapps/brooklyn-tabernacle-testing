@@ -1,7 +1,7 @@
 import * as settings from "../support/settings";
 
-describe("Visit on Header Menu links", function() {
-  it("clicks on the Home link", function() {
+describe("Visit on Header Menu links", () => {
+  it("clicks on the Home link", () => {
     cy.visit(settings.WEBSITE_URL);
     cy.contains("Home").click();
     cy.url().should("include", "/");
@@ -19,7 +19,7 @@ describe("Visit on Header Menu links", function() {
     cy.contains("Connect With Us");
   });
 
-  it("clicks on the Directions link", function() {
+  it("clicks on the Directions link", () => {
     cy.visit(settings.WEBSITE_URL);
     cy.contains("Directions").click();
     cy.url().should("include", "/the-church/directions");
@@ -30,7 +30,7 @@ describe("Visit on Header Menu links", function() {
     cy.contains("Parking Information");
   });
 
-  it("clicks on the Service Times link", function() {
+  it("clicks on the Service Times link", () => {
     cy.visit(settings.WEBSITE_URL);
     cy.contains("Service Times").click();
     cy.url().should("include", "/the-church/service-times");
@@ -38,7 +38,7 @@ describe("Visit on Header Menu links", function() {
     cy.contains("Tuesday");
   });
 
-  it("clicks on the Daily Devotional link", function() {
+  it("clicks on the Daily Devotional link", () => {
     cy.visit(settings.WEBSITE_URL);
     cy.get(".header-link-left > a:contains('Daily Devotional')").click();
     cy.url().should("include", "/devotional");
@@ -46,7 +46,7 @@ describe("Visit on Header Menu links", function() {
     cy.contains("Recent Entries");
   });
 
-  it("clicks on the Contact Us link", function() {
+  it("clicks on the Contact Us link", () => {
     cy.visit(settings.WEBSITE_URL);
     cy.contains("Contact Us").click();
     cy.url().should("include", "/the-church/contact-us");
