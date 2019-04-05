@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/allaboardapps/brooklyn-tabernacle-testing#readme",
   "devDependencies": {
-    "cypress": "^3.2.0"
+    "cypress": "3.2.0"
   }
 }
